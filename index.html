@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrenador IA</title>
+    <title>Entrenador Matemático con IA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contenedor">
-        <h1>Entrenador Matemático </h1>
-        <p>Selecciona un tema para empezar a practicar:</p>
-        
-        <div id="lista-temas" class="grilla-temas">
-            <p>Cargando temas...</p>
-        </div>
+
+<div class="contenedor">
+    <h2>Entrenador con IA</h2>
+    <p>Tema: <b>Álgebra</b> | Dificultad: <b>Intermedio</b></p>
+    <button id="btn-generar" onclick="pedirEjercicio()">Generar Nuevo Ejercicio</button>
+
+    <div id="zona-ejercicio" style="display: none;">
+        <h3 id="enunciado"></h3>
+        <div id="opciones"></div>
     </div>
 
-    <script src="app.js"></script>
+    <div id="feedback"></div>
+</div>
+
+<script src="entrenador.js"></script>
 </body>
 </html>
